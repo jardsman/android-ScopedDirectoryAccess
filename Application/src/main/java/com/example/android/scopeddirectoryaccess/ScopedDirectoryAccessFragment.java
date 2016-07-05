@@ -106,7 +106,7 @@ public class ScopedDirectoryAccessFragment extends Fragment {
             public void onClick(View view) {
                 String selected = mDirectoriesSpinner.getSelectedItem().toString();
                 String directoryName = getDirectoryName(selected);
-                StorageVolume storageVolume = mStorageManager.getPrimaryVolume();
+                StorageVolume storageVolume = mStorageManager.getPrimaryStorageVolume();
                 Intent intent = storageVolume.createAccessIntent(directoryName);
                 startActivityForResult(intent, OPEN_DIRECTORY_REQUEST_CODE);
             }
