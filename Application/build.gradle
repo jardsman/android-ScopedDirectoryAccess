@@ -22,7 +22,7 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-wearable:8.4.0'
     compile 'com.android.support:support-v13:23.3.0'
-    compile "com.android.support:appcompat-v7:23.3.0"
+    compile "com.android.support:appcompat-v7:24.0.0"
 
     compile 'com.google.android.support:wearable:2.0.0-alpha1'
 
@@ -44,18 +44,14 @@ android {
         versionCode 1
         versionName "1.0"
 
-        minSdkVersion 23
+        minSdkVersion 24
 
         targetSdkVersion 24
-
-        jackOptions {
-            enabled true
-        }
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
 
     }
 
